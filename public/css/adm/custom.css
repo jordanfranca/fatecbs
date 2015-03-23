@@ -1,0 +1,12 @@
+/* Botões */
+.btn-primary a {
+	color: #fff !important;
+}
+/* Paginação */
+.paginacao a, .paginacao strong {
+	padding: 6px 12px; background: #fff; border: solid 1px #ddd; float: left; margin-left: -1px;
+}
+
+.paginacao strong {
+	background: #0071bc; color: #FFF;
+}
