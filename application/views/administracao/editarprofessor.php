@@ -75,8 +75,8 @@
                   <label for="inputStandard" class="col-lg-2 control-label">Ativo?: </label>
                   <div class="col-lg-10">
                     <select class="form-control" id="standard-list1" name="ativo">
-                        <option value="1" <?php if($objProfessor->ind_status == 1) echo 'seleted'; ?>>Sim</option>
-                        <option value="0" <?php if($objProfessor->ind_status == 0) echo 'seleted'; ?>>Não</option>
+                        <option value="1" <?php if($objProfessor->ind_status == 1) echo 'selected'; ?>>Sim</option>
+                        <option value="0" <?php if($objProfessor->ind_status == 0) echo 'seletced'; ?>>Não</option>
                     </select>
                   </div>
                 </div>
@@ -85,7 +85,11 @@
                 <div class="form-group">
                   <label for="inputStandard" class="col-lg-2 control-label">Contrato</label>
                     <div class="col-lg-10">
-                      <textarea class="ckeditor editor1" id="editor1" name="contrato" rows="14"><?php echo $objProfessor->ds_contrato; ?></textarea>
+                      <select class="form-control" id="standard-list1" name="contrato">
+                        <option value="Concursado" <?php if($objProfessor->ds_contrato == "Concursado") echo 'selected'; ?>>Concursado</option>
+                        <option value="Determinado" <?php if($objProfessor->ds_contrato == "Determinado") echo 'selected'; ?>>Determinado</option>
+                        <option value="Emergencial" <?php if($objProfessor->ds_contrato == "Emergencial") echo 'selected'; ?>>Emergencial</option>
+                      </select>
                     </div>
                 </div>
 

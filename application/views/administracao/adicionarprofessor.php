@@ -85,7 +85,11 @@
                 <div class="form-group">
                   <label for="inputStandard" class="col-lg-2 control-label">Contrato</label>
                     <div class="col-lg-10">
-                      <textarea class="ckeditor editor1" id="editor1" name="contrato" rows="14"></textarea>
+                      <select class="form-control" id="standard-list1" name="contrato">
+                        <option value="Concursado">Concursado</option>
+                        <option value="Determinado">Determinado</option>
+                        <option value="Emergencial">Emergencial</option>
+                      </select>
                     </div>
                 </div>
 
